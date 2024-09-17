@@ -4,20 +4,20 @@ export default function About() {
     return(
         <main className="px-5 mt-16">
             <div className="flex w-full">
-                <section className="w-[35%]">
+                <section className="w-[35%] flex justify-center items-start">
                     <img src={PIC2} width="350" height="350" alt="My Photo" />
                 </section>
                 <section className="w-[65%] flex items-center">
-                    <div className="bg-[#d9d9d9] py-7 px-10 rounded-xl shadow-xl border border-gray-300">
-                        <h1 className="font-bold text-black text-3xl text-">About Me</h1>
-                        <p className="font-normal text-black w-full mt-5 text-justify">I am a graduate with a Bachelor of Engineering Technology, majoring in Computer Engineering Technology. I am passionate about technology, with a strong focus on web development, constantly seeking opportunities to innovate and enhance digital experiences. I have hands-on experience in both frontend and backend development, and I enjoy tackling complex challenges by building efficient, user-centric applications. I'm always eager to learn new technologies and contribute to impactful projects that make a difference in the digital world. My goal is to continually grow as a developer while creating meaningful solutions that improve user experiences.</p>
+                    <div className="bg-[#181a1a] py-10 px-10 rounded-xl shadow-xl border border-gray-300">
+                        <h1 className="font-semibold text-3xl text-">About Me</h1>
+                        <p className="font-normal w-full mt-5 text-justify">Hello, I’m Reysil M. Clarion, a recent graduate with a Bachelor of Engineering Technology, majoring in Computer Engineering Technology. I’m passionate about technology, with a strong focus on web development, and I constantly seek opportunities to innovate and enhance digital experiences. I have hands-on experience in both frontend and backend development, and I enjoy tackling complex challenges by building efficient, user-centric applications. I’m always eager to learn new technologies and contribute to impactful projects that make a difference in the digital world. My goal is to continually grow as a developer while creating meaningful solutions that improve user experiences.</p>
                     </div>
                 </section>
             </div>
-            <div className="flex gap-x-4 w-full">
-                <section className="w-[30%] space-y-3">
-                    <div className="w-full p-4 bg-[#d9d9d9] rounded-md shadow-lg border border-gray-300">
-                        <h1 className="text-2xl text-black font-semibold">Technical Skills</h1>
+            <div className="flex gap-x-4 w-full pt-4">
+                <section className="w-[34%] space-y-3">
+                    <div className="w-full p-4 bg-[#181a1a] rounded-md shadow-lg border border-gray-300">
+                        <h1 className="font-medium">Technical Skills:</h1>
                         <div className="flex flex-wrap gap-3 mt-3">
                             <div className="tooltip" data-tip="MySQL">
                                 <box-icon type='logo' name='html5' color='#dd4d26' size='md' animation='tada-hover'></box-icon>
@@ -52,22 +52,70 @@ export default function About() {
                         </div>
                         <hr className="my-4 border-[1px] border-gray-400" />
                         <div>
-                            <h1 className="text-2xl text-black font-semibold">Soft Skills</h1>
-                            <ul className="list-disc pl-5">
-                                <li className="text-black text-sm">Problem-Solving</li>
-                                <li className="text-black text-sm">Communication</li>
-                                <li className="text-black text-sm">Teamwork</li>
-                                <li className="text-black text-sm">Adaptability</li>
-                                <li className="text-black text-sm">Time Management</li>
-                                <li className="text-black text-sm">Attention to Detail</li>
-                                <li className="text-black text-sm">Critical Thinking</li>
-                                <li className="text-black text-sm">Self-Learning</li>
+                            <h1 className="font-medium">Soft Skills:</h1>
+                            <ul className="list-disc pl-4 mt-1">
+                                <li className="text-sm">Problem-Solving</li>
+                                <li className="text-sm">Communication</li>
+                                <li className="text-sm">Teamwork</li>
+                                <li className="text-sm">Adaptability</li>
+                                <li className="text-sm">Time Management</li>
+                                <li className="text-sm">Attention to Detail</li>
+                                <li className="text-sm">Critical Thinking</li>
+                                <li className="text-sm">Self-Learning</li>
                             </ul>
+                        </div>
+                        <hr className="my-4 border-[1px] border-gray-400" />
+                        <div className="flex">
+                            <div className="w-[50%]">
+                                <h1 className="font-medium">Resume:</h1>
+                                <a href="../assets/Reysil Clarion Resume.pdf" download="Reysil Clarion Resume.pdf" className="text-[12px] text-blue-500">
+                                    Reysil Clarion Resume.pdf
+                                </a>
+                            </div>
+                            <div className="w-[50%]">
+                                <h2 className="font-medium">Cover Letter:</h2>
+                                <a href="../assets/Reysil Clarion Cover Letter.pdf" download="Reysil Clarion Cover Letter.pdf" className="text-[12px] text-blue-500">
+                                    Reysil Clarion Cover Letter.pdf
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </section>
-                <section className="w-[70%] bg-[#d9d9d9] rounded-md shadow-lg border border-gray-300">
-                    
+                <section className="w-[65%] space-y-4">
+                    <div className="w-full h-[48%] bg-[#181a1a] rounded-md shadow-lg border border-gray-300 p-4">
+                        <h1 className="font-medium">Education</h1>
+                        <div className="flex justify-between w-full h-[70%] mt-5">
+                            <div className="w-[49%] bg-black rounded-md p-2">
+                                <p className="text-xs">2020-2024</p>
+                                <h1 className="text-sm font-medium mt-5">Technological University of the Philippines Visayas</h1>
+                                <h1 className="text-xs italic mt-2">Bachelor of Engineering Technology Major in Computer Engineering Technology</h1>
+                            </div>
+                            <div className="w-[49%] bg-black rounded-md p-2">
+                                <p className="text-xs">2018-2020</p>
+                                <h1 className="text-sm font-medium mt-5">Caduha-an National High School</h1>
+                                <h1 className="text-xs italic mt-2">Humanities and Social Sciences (HUMSS)</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="w-full h-[48%] bg-[#181a1a] rounded-md shadow-lg border border-gray-300 p-4">
+                        <h1 className="font-medium">Experiences</h1>
+                        <div className="flex justify-between w-full h-[70%] mt-5">
+                            <div className="w-[49%] bg-black rounded-md p-2">
+                                <p className="text-xs">January - June, 2024</p>
+                                <a href="https://www.philkoei.com.ph/" target="_blank" className="hover:text-blue-500">
+                                    <h1 className="text-sm font-medium mt-7">Philkoei International Inc.</h1>
+                                </a>
+                                <h2 className="text-sm mt-2">Web Developer/IT Technical Support Intern</h2>
+                            </div>
+                            <div className="w-[49%] bg-black rounded-md p-2">
+                                <p className="text-xs">July - August, 2023</p>
+                                <a href="https://pixel8websolutions.com/" target="_blank" className="hover:text-blue-500">
+                                    <h1 className="text-sm font-medium mt-7">Pixel8 Web Solutions & Consultancy Inc.</h1>
+                                </a>
+                                <h2 className="text-sm mt-2">System Analyst Intern</h2>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
         </main>
