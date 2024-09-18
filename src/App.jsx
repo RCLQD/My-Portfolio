@@ -1,5 +1,5 @@
-import React, { useRef } from "react"; // Added useRef import
-import { BrowserRouter as Router } from "react-router-dom"; // Updated import for Router
+import React, { useRef, useState, useEffect } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import Home from "./pages/home";
@@ -10,21 +10,32 @@ export default function App() {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const portfolioRef = useRef(null);
+  const [isNavbarVisible, setNavbarVisible] = useState(true);
 
   const scrollToSection = (section) => {
-    if (section === 'home' && homeRef.current) {
-      homeRef.current.scrollIntoView({ behavior: "smooth" });
-    } else if (section === 'about' && aboutRef.current) {
-      aboutRef.current.scrollIntoView({ behavior: "smooth" });
-    } else if (section === 'portfolio' && portfolioRef.current) {
-      portfolioRef.current.scrollIntoView({ behavior: "smooth" });
-    }
+    const sections = { home: homeRef, about: aboutRef, portfolio: portfolioRef };
+    sections[section]?.current?.scrollIntoView({ behavior: "smooth" });
   };
+  
+  useEffect(() => {
+    let lastScroll = 0, scrollUpCount = 0;
+  
+    const handleScroll = () => {
+      const currentScroll = window.pageYOffset;
+      setNavbarVisible(currentScroll > lastScroll ? false : ++scrollUpCount >= 2);
+      if (currentScroll > lastScroll) scrollUpCount = 0;
+      lastScroll = Math.max(currentScroll, 0);
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  
 
   return (
     <Router>
       {/* Navbar */}
-      <Navbar onScrollTo={scrollToSection} />
+      <Navbar onScrollTo={scrollToSection} isNavbarVisible={isNavbarVisible} />
 
       {/* Main Content */}
       <div ref={homeRef}>

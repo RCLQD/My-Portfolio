@@ -1,13 +1,21 @@
 import PIC2 from "../assets/PIC-2.png"
+import Aos from "aos"
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 export default function About() {
+    
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+    }, [])
+    
     return(
-        <main className="px-5 mt-16">
+        <main className="px-5 pt-5 pb-5">
             <div className="flex w-full">
-                <section className="w-[35%] flex justify-center items-start">
+                <section className="w-[35%] flex justify-center items-center" data-aos="fade-right">
                     <img src={PIC2} width="350" height="350" alt="My Photo" />
                 </section>
-                <section className="w-[65%] flex items-center">
+                <section className="w-[65%] flex items-center" data-aos="fade-up">
                     <div className="bg-[#181a1a] py-10 px-10 rounded-xl shadow-xl border border-gray-300">
                         <h1 className="font-semibold text-3xl text-">About Me</h1>
                         <p className="font-normal w-full mt-5 text-justify">Hello, I’m Reysil M. Clarion, a recent graduate with a Bachelor of Engineering Technology, majoring in Computer Engineering Technology. I’m passionate about technology, with a strong focus on web development, and I constantly seek opportunities to innovate and enhance digital experiences. I have hands-on experience in both frontend and backend development, and I enjoy tackling complex challenges by building efficient, user-centric applications. I’m always eager to learn new technologies and contribute to impactful projects that make a difference in the digital world. My goal is to continually grow as a developer while creating meaningful solutions that improve user experiences.</p>
@@ -16,7 +24,7 @@ export default function About() {
             </div>
             <div className="flex gap-x-4 w-full pt-4">
                 <section className="w-[34%] space-y-3">
-                    <div className="w-full p-4 bg-[#181a1a] rounded-md shadow-lg border border-gray-300">
+                    <div className="w-full p-4 bg-[#181a1a] rounded-md shadow-lg border border-gray-300" data-aos="fade-right">
                         <h1 className="font-medium">Technical Skills:</h1>
                         <div className="flex flex-wrap gap-3 mt-3">
                             <div className="tooltip" data-tip="MySQL">
@@ -82,7 +90,7 @@ export default function About() {
                     </div>
                 </section>
                 <section className="w-[65%] space-y-4">
-                    <div className="w-full h-[48%] bg-[#181a1a] rounded-md shadow-lg border border-gray-300 p-4">
+                    <div className="w-full h-[48%] bg-[#181a1a] rounded-md shadow-lg border border-gray-300 p-4" data-aos="fade-up">
                         <h1 className="font-medium">Education</h1>
                         <div className="flex justify-between w-full h-[70%] mt-5">
                             <div className="w-[49%] bg-black rounded-md p-2">
@@ -97,7 +105,7 @@ export default function About() {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full h-[48%] bg-[#181a1a] rounded-md shadow-lg border border-gray-300 p-4">
+                    <div className="w-full h-[48%] bg-[#181a1a] rounded-md shadow-lg border border-gray-300 p-4" data-aos="fade-up">
                         <h1 className="font-medium">Experiences</h1>
                         <div className="flex justify-between w-full h-[70%] mt-5">
                             <div className="w-[49%] bg-black rounded-md p-2">
