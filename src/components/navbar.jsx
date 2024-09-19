@@ -4,7 +4,7 @@ import Logo from "../assets/LOGO1.png";
 const Navbar = ({ onScrollTo, isNavbarVisible }) => {
   return (
     <nav
-      data-theme="sunset"
+      data-theme="dark"
       className={`flex justify-between p-2 fixed top-0 w-full z-10 transition-transform duration-300 ${ isNavbarVisible ? "translate-y-0" : "-translate-y-full" }`}
     >
       <span className="flex items-center gap-1">

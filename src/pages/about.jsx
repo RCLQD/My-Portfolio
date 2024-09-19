@@ -1,4 +1,6 @@
 import PIC2 from "../assets/PIC-2.png"
+import Resume from "../assets/Reysil Clarion Resume.pdf";
+import CL from "../assets/Reysil Clarion Cover Letter.pdf";
 import Aos from "aos"
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
@@ -76,13 +78,13 @@ export default function About() {
                         <div className="flex">
                             <div className="w-[50%]">
                                 <h1 className="font-medium">Resume:</h1>
-                                <a href="../assets/Reysil Clarion Resume.pdf" download="Reysil Clarion Resume.pdf" className="text-[12px] text-blue-500">
+                                <a href={Resume} download className="text-[12px] text-blue-500">
                                     Reysil Clarion Resume.pdf
                                 </a>
                             </div>
                             <div className="w-[50%]">
                                 <h2 className="font-medium">Cover Letter:</h2>
-                                <a href="../assets/Reysil Clarion Cover Letter.pdf" download="Reysil Clarion Cover Letter.pdf" className="text-[12px] text-blue-500">
+                                <a href={CL} download className="text-[12px] text-blue-500">
                                     Reysil Clarion Cover Letter.pdf
                                 </a>
                             </div>

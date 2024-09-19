@@ -36,7 +36,7 @@ export default function App() {
     <Router>
       {/* Navbar */}
       <Navbar onScrollTo={scrollToSection} isNavbarVisible={isNavbarVisible} />
-
+    <div data-theme="sunset">
       {/* Main Content */}
       <div ref={homeRef}>
         <Home />
@@ -47,9 +47,9 @@ export default function App() {
       <div ref={portfolioRef}>
         <Portfolio />
       </div>
-
       {/* Footer */}
       <Footer />
+    </div> 
     </Router>
   );
 }
