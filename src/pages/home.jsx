@@ -10,7 +10,7 @@ export default function Home() {
                         I am a passionate Web Developer creating user-friendly digital experiences.
                     </h2>
                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=reysilclarion17@gmail.com" target="_blank">
-                        <button className="bg-[#14142b] text-white w-[170px] h-[55px] rounded-2xl mt-14">Get in touch</button>
+                        <button className="bg-black text-white w-[170px] h-[55px] rounded-2xl mt-14 hover:shadow-2xl active:scale-[0.95]">Get in touch</button>
                     </a>
                     <div className="flex gap-6 mt-10 ml-1">
                         <a href="https://www.facebook.com/reysil.clarion.1" target="_blank">

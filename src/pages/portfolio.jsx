@@ -9,9 +9,11 @@ export default function Portfolio() {
     }, [])
 
     return(
-        <main className="w-full h-[80vh] flex px-5 py-5">
-            <div className="w-full bg-[#181a1a] py-10 px-10 rounded-xl shadow-xl border border-gray-300" data-aos="zoom-in-up">
-
+        <main className="w-full flex p-5">
+            <div className="w-full bg-[#181a1a] p-10 rounded-xl shadow-xl border border-gray-300 flex flex-wrap justify-between gap-y-4" data-aos="zoom-in-up">
+                <section className="text-center w-[23rem] h-[27rem] bg-black rounded-md hover:scale-[1.02]">1</section>
+                <section className="text-center w-[23rem] h-[27rem] bg-black rounded-md hover:scale-[1.02]">2</section>
+                <section className="text-center w-[23rem] h-[27rem] bg-black rounded-md hover:scale-[1.02]">3</section>
             </div>
         </main>
     )

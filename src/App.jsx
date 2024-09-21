@@ -49,7 +49,7 @@ export default function App() {
       </div>
       {/* Footer */}
       <Footer />
-    </div> 
+    </div>
     </Router>
   );
 }

@@ -29,7 +29,7 @@ export default function About() {
                     <div className="w-full p-4 bg-[#181a1a] rounded-md shadow-lg border border-gray-300" data-aos="fade-right">
                         <h1 className="font-medium">Technical Skills:</h1>
                         <div className="flex flex-wrap gap-3 mt-3">
-                            <div className="tooltip" data-tip="MySQL">
+                            <div className="tooltip" data-tip="HTML">
                                 <box-icon type='logo' name='html5' color='#dd4d26' size='md' animation='tada-hover'></box-icon>
                             </div>
                             <div className="tooltip" data-tip="CSS">
