@@ -7,25 +7,25 @@
             "description": "This website allows users to explore, search, and discover the latest trending anime, providing detailed information on genres, synopses, and links for watching.",
             "link":"https://anime-hub-black.vercel.app/",
             "github":"https://github.com/RCLQD/AnimeHub",
-            "img":"/src/assets/animehub.png"
+            "img":"animehub.png"
         },
         {
             "P_id":"2",
-            "project_name":"AnimePaheeee",
+            "project_name":"AnimePahe",
             "status":"Live",
             "description": "This website allows users to explore, search, and discover the latest trending anime, providing detailed information on genres, synopses, and links for watching.",
             "link":"https://anime-hub-black.vercel.app/",
             "github":"https://github.com/RCLQD/AnimeHub",
-            "img":"/src/assets/LOGO.png"
+            "img":"animehub.png"
         },
         {
             "P_id":"3",
-            "project_name":"AnimePage",
+            "project_name":"AnimePagessssss",
             "status":"Live",
             "description": "This website allows users to explore, search, and discover the latest trending anime, providing detailed information on genres, synopses, and links for watching.",
             "link":"https://anime-hub-black.vercel.app/",
             "github":"https://github.com/RCLQD/AnimeHub",
-            "img":"/src/assets/animehub.png"
+            "img":"animehub.png"
         }
     ]
 }
