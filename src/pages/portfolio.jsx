@@ -14,7 +14,7 @@ export default function Portfolio() {
             <div className="w-full grid grid-cols-3 gap-4 bg-[#181a1a] p-10 rounded-xl shadow-xl border border-gray-300" data-aos="zoom-in-up">
                 {ProjectsFromJSON.Projects.map((project) => (
                     <div key={project.P_id} className="w-[23rem] h-[27rem] rounded-md hover:scale-[1.02] relative group">
-                    <img src={`/src/assets/${project.img}`} alt="project image" className="w-full h-full rounded-md object-cover absolute opacity-75 transition-opacity group-hover:opacity-50" />
+                    <img src={project.img} alt="project image" className="w-full h-full rounded-md object-cover absolute opacity-75 transition-opacity group-hover:opacity-50" />
                     <div className="p-10">
                         <h1 className="border rounded-md inline-block py-1 px-4" data-theme="luxury">{project.status}</h1>
                         <h2 className="text-white text-2xl">{project.project_name}</h2>
