@@ -1,4 +1,5 @@
 import PIC1 from "../assets/PIC-1.png"
+import { useState, useEffect } from "react"
 
 export default function Home() {
     return(

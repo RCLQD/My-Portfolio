@@ -13,6 +13,6 @@ export default {
   },
   plugins: [require('daisyui'),],
   daisyui: {
-    themes: ["light", "dark", "black", "sunset"],
+    themes: ["light", "dark", "black", "sunset", "luxury"],
   },
 }
