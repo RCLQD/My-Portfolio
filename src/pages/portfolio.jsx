@@ -22,7 +22,9 @@ export default function Portfolio() {
                     <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-5 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
                         <p className="text-white text-sm">{project.description}</p>
                         <div className="flex gap-x-4 mt-4">
-                            <a href={project.link} target="_blank" className="bg-black text-white rounded-md py-1 px-2 hover:shadow-xl duration-75 hover:translate-y-0.5">Website</a>
+                            {project.link && (
+                                <a href={project.link} target="_blank" className="bg-black text-white rounded-md py-1 px-2 hover:shadow-xl duration-75 hover:translate-y-0.5">Website</a>
+                            )}
                             <a href={project.github} target="_blank" className="bg-black text-white rounded-md py-1 px-2 hover:shadow-xl duration-75 hover:translate-y-0.5">GitHub</a>
                         </div>
                     </div>
