@@ -14,10 +14,10 @@ export default function Portfolio() {
             <div className="w-full grid grid-cols-3 gap-4 bg-[#181a1a] p-10 rounded-xl shadow-xl border border-gray-300" data-aos="zoom-in-up">
                 {ProjectsFromJSON.Projects.map((project) => (
                     <div key={project.P_id} className="w-[23rem] h-[27rem] rounded-md hover:scale-[1.02] relative group">
-                    <img src={project.img} alt="project image" className="w-full h-full rounded-md object-cover absolute opacity-75 transition-opacity group-hover:opacity-50" />
+                    <img src={project.img} alt="project image" className="w-full h-full rounded-md object-cover absolute opacity-70 transition-opacity group-hover:opacity-30" />
                     <div className="p-10">
                         <h1 className="border rounded-md inline-block py-1 px-4" data-theme="luxury">{project.status}</h1>
-                        <h2 className="text-white text-2xl">{project.project_name}</h2>
+                        <h2 className="text-2xl">{project.project_name}</h2>
                     </div>
                     <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-5 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
                         <p className="text-white text-sm">{project.description}</p>
