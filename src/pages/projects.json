@@ -17,6 +17,15 @@
             "link":"",
             "github":"https://github.com/RCLQD/To-Do-List",
             "img":"/images/todolist.png"
+        },
+        {
+            "P_id":"3",
+            "project_name":"Gallery",
+            "status":"Offline",
+            "description": "This website allows you to store and organize photos in folders. It functions as a gallery website, helping users keep their cherished memories organized and easily accessible.",
+            "link":"",
+            "github":"https://github.com/RCLQD/Gallery",
+            "img":"/images/gallery.png"
         }
     ]
 }
